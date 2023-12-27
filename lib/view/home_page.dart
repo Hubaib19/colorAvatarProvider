@@ -10,7 +10,7 @@ import 'package:provider/provider.dart';
   Widget build(BuildContext context) {
     final colors = Provider.of<AvatarColorProvider>(context, listen: true);
     return Scaffold(
-      backgroundColor: Colors.teal[300],
+      backgroundColor: Colors.purple[300],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -22,17 +22,17 @@ import 'package:provider/provider.dart';
                 backgroundColor: Colors.tealAccent[400],
               ),
               onPressed: () {
-                colors.greenColor();
+                colors.tealAccent();
               },
-              child: const Text('teal'),
+              child: const Text('click'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
                 onPressed: () {
-                  colors.whiteColor();
+                  colors.teal();
                 },
-                style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
-                child: const Text('white'))
+                style: ElevatedButton.styleFrom(backgroundColor:Colors.amber),
+                child: const Text('Click'))
           ],
         ),
       ),

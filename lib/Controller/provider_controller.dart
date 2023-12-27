@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AvatarColorProvider extends ChangeNotifier {
-  Color? avatarcolor = Colors.green[300];
-  whiteColor() {
-    avatarcolor = Colors.white;
+  Color? avatarcolor = Colors.white;
+  teal() {
+    avatarcolor = Colors.amber;
     notifyListeners();
   }
 
-  greenColor() {
+  tealAccent() {
     avatarcolor = Colors.tealAccent;
     notifyListeners();
   }
